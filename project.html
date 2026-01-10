@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Proyecto | Kevin</title>
+  <meta name="description" content="Detalle del proyecto desde GitHub." />
+  <link rel="icon" href="assets/icons/favicon.svg" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="Volver al inicio">
+        <span class="brand__dot" aria-hidden="true"></span>
+        <span class="brand__text">Kevin.dev</span>
+      </a>
+
+      <div class="header__cta">
+        <a class="btn btn--ghost" href="index.html#projects">← Volver</a>
+        <a class="btn btn--primary" id="repoLink" target="_blank" rel="noreferrer">Ver en GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2 id="repoName">Cargando…</h2>
+        <p class="muted" id="repoMeta">—</p>
+      </div>
+
+      <div class="grid grid--2">
+        <article class="card">
+          <h3>Descripción</h3>
+          <p class="muted" id="repoDesc">—</p>
+
+          <div class="tags" id="repoTopics"></div>
+
+          <div class="actions" style="margin-top:12px;">
+            <a class="btn btn--primary" id="btnCode" target="_blank" rel="noreferrer">Código</a>
+            <a class="btn btn--ghost" id="btnDemo" target="_blank" rel="noreferrer" style="display:none;">Demo</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Stats</h3>
+          <div class="panel__row"><span class="muted">Lenguaje</span><strong id="repoLang">—</strong></div>
+          <div class="panel__row"><span class="muted">⭐ Stars</span><strong id="repoStars">—</strong></div>
+          <div class="panel__row"><span class="muted">🍴 Forks</span><strong id="repoForks">—</strong></div>
+          <div class="panel__row"><span class="muted">Issues</span><strong id="repoIssues">—</strong></div>
+          <div class="panel__row"><span class="muted">Branch</span><strong id="repoBranch">—</strong></div>
+        </article>
+      </div>
+
+      <p class="muted small" id="statusDetail" style="margin-top:14px;"></p>
+    </div>
+  </main>
+
+  <script type="module" src="js/project.js"></script>
+</body>
+</html>
