@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kevin Quiñones | Portafolio</title>
+  <meta name="description" content="Portafolio dinámico desde GitHub: proyectos web, móvil y backend." />
+  <meta name="theme-color" content="#0b1020" />
+  <link rel="icon" href="assets/icons/favicon.svg" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Ir al inicio">
+        <span class="brand__dot" aria-hidden="true"></span>
+        <span class="brand__text">Kevin.dev</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#about">Sobre mí</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+
+      <div class="header__cta">
+        <a class="btn btn--ghost" id="btnGithub" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn btn--primary" href="#contact">Hablemos</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero__grid">
+        <div>
+          <p class="badge">Web & Mobile Developer</p>
+          <h1 class="hero__title">Hola, soy <span class="gradient-text">Kevin Jair Quiñones Sierra</span>.</h1>
+          <p class="hero__lead muted">
+            Portafolio dinámico desde GitHub. Filtra por tipo y entra al detalle de cada repo.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projects">Ver proyectos</a>
+            <a class="btn btn--ghost" id="btnLinkedIn" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+
+          <div class="chips" id="heroChips" aria-label="Tecnologías principales"></div>
+        </div>
+
+        <aside class="panel hero__panel" aria-label="Resumen rápido">
+          <div class="panel__row"><span class="muted">👤 GitHub</span><strong id="ghUser">—</strong></div>
+          <div class="panel__row"><span class="muted">📦 Repos</span><strong id="ghRepoCount">—</strong></div>
+          <div class="panel__row"><span class="muted">⭐ Stars</span><strong id="ghStars">—</strong></div>
+          <div class="panel__note muted" id="statusBox">Cargando datos desde GitHub…</div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head">
+          <h2>Sobre mí</h2>
+          <p class="muted">Full-stack / Web / Mobile — enfoque en arquitectura y mantenibilidad.</p>
+        </div>
+
+        <div class="grid grid--2">
+          <article class="card">
+            <h3>Perfil</h3>
+            <p class="muted">
+              Me gusta construir productos con experiencia de usuario clara, estructura modular y despliegues confiables.
+            </p>
+            <div class="tags">
+              <span class="tag">Clean Code</span>
+              <span class="tag">Arquitectura</span>
+              <span class="tag">REST</span>
+              <span class="tag">Testing</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Links</h3>
+            <div class="actions">
+              <a class="btn btn--primary" href="mailto:kevin.quinones@esumer.edu.co">Email</a>
+              <a class="btn btn--ghost" href="https://github.com/kquinones107" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="btn btn--ghost" href="https://www.linkedin.com/in/kevin-jair-quinones-sierra-aa1b26265" target="_blank" rel="noreferrer">LinkedIn</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head">
+          <h2>Proyectos</h2>
+          <p class="muted">Desde GitHub (ordenados por actualización).</p>
+        </div>
+
+        <div class="projects__controls">
+          <div class="filters" role="toolbar" aria-label="Filtros">
+            <button class="filter" data-filter="all" aria-pressed="true">Todos</button>
+            <button class="filter" data-filter="web" aria-pressed="false">Web</button>
+            <button class="filter" data-filter="mobile" aria-pressed="false">Móvil</button>
+            <button class="filter" data-filter="backend" aria-pressed="false">Backend</button>
+            <button class="filter" data-filter="other" aria-pressed="false">Otros</button>
+          </div>
+
+          <label class="search" aria-label="Buscar proyectos">
+            <span class="search__icon" aria-hidden="true">⌕</span>
+            <input id="projectSearch" type="search" placeholder="Buscar (ej: react, expo, api...)" autocomplete="off" />
+          </label>
+        </div>
+
+        <div class="grid grid--2" id="projectsGrid" aria-live="polite"></div>
+        <p class="muted small" id="projectsCount" style="margin-top:10px;"></p>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__head">
+          <h2>Contacto</h2>
+          <p class="muted">Escríbeme y hablamos.</p>
+        </div>
+
+        <div class="grid grid--2">
+          <article class="card">
+            <h3>Directo</h3>
+            <div class="actions">
+              <a class="btn btn--primary" href="mailto:kevin.quinones@esumer.edu.co">kevin.quinones@esumer.edu.co</a>
+              <a class="btn btn--ghost" href="https://github.com/kquinones107" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="btn btn--ghost" href="https://www.linkedin.com/in/kevin-jair-quinones-sierra-aa1b26265" target="_blank" rel="noreferrer">LinkedIn</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Nota</h3>
+            <p class="muted">
+              Si quieres, luego conectamos un formulario real con Formspree/Netlify Forms o un endpoint tuyo.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span class="muted">© <span id="year"></span> Kevin</span>
+        <span class="muted">Datos: GitHub API</span>
+      </div>
+    </footer>
+  </main>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
