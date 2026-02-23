@@ -42,14 +42,7 @@ function repoCard(r) {
     actions,
   ]);
 
-  function imgSlug(name){
-  return name
-    .toLowerCase()
-    .replaceAll(" ", "-")
-    .replaceAll("_", "-");
-  }
-
-  const imagePath = `assets/img/projects/${imgSlug(r.name)}.png`;
+  const imagePath = `assets/img/projects/${r.name.toLowerCase()}.png`;
 
   const img = el("img", {
     src: imagePath,
