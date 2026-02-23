@@ -28,7 +28,7 @@ export const FEATURED = [
     title: "ClickInmediato",
     role: "Web",
     highlights: ["Landing/Producto", "Optimización UI", "Responsive"],
-    image: "assets/img/projects/clickinmediato.png",
+    image: "assets/img/projects/clickInmediato.png",
     demo: ""
   },
   {
@@ -44,7 +44,7 @@ export const FEATURED = [
     title: "Yaiki",
     role: "Web / Mobile",
     highlights: ["Arquitectura", "Componentes", "Escalable"],
-    image: "assets/img/projects/yaiki.png",
+    image: "assets/img/projects/Yaiki.png",
     demo: ""
   }
 ];
